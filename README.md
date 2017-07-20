@@ -29,3 +29,9 @@ docker logs {containerID}
 ```bash
 docker stats {containerID}
 ```
+
+## Dump logs of docker compose env  
+
+```bash
+docker-compose logs --no-color >& logs.log
+```
