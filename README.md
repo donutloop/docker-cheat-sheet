@@ -6,8 +6,14 @@
   docker rm $(docker ps -a -q)
 ```
 
-# Delete all images
+## Delete all images
 
 ```bash
   docker rmi $(docker images -q)
+```
+
+## Stop all containers:
+
+```bash
+docker kill $(docker ps -q)
 ```
