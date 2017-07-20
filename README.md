@@ -17,3 +17,15 @@
 ```bash
 docker kill $(docker ps -q)
 ```
+
+## Show logs of container 
+
+```bash
+docker logs {containerID}
+```
+
+## Show stats of container 
+
+```bash
+docker stats {containerID}
+```
