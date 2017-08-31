@@ -35,3 +35,8 @@ docker stats {containerID}
 ```bash
 docker-compose logs --no-color >& logs.log
 ```
+## Login into container
+
+```bash
+docker exec -i -t {{containerID}} /bin/bash
+```
