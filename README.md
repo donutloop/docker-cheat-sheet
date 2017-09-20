@@ -6,12 +6,6 @@
   docker rm $(docker ps -a -q)
 ```
 
-## Delete all images
-
-```bash
-  docker rmi $(docker images -q)
-```
-
 ## Stop all containers:
 
 ```bash
@@ -39,4 +33,29 @@ docker-compose logs --no-color >& logs.log
 
 ```bash
 docker exec -i -t {{containerID}} /bin/bash
+```
+
+## List all images
+
+```bash
+docker images --all
+```
+
+## Delete all images
+
+```bash
+  docker rmi $(docker images --quiet --all)
+```
+
+## Remove all exited containers
+
+###  list:
+
+```bash
+  docker ps -a -f status=exited
+```
+
+### Remove:
+```bash
+  docker rm $(docker ps -a -f status=exited -q)
 ```
