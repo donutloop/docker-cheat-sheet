@@ -59,3 +59,17 @@ docker images --all
 ```bash
   docker rm $(docker ps -a -f status=exited -q)
 ```
+
+## Build by file
+
+### build
+
+```bash
+    docker build --tag "test_mongodb:dockerfile" --file ./Dockerfile.db
+```
+
+### run  
+
+```bash
+     docker run -p 27017:27017 test_mongodb:dockerfile 
+```
