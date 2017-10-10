@@ -65,7 +65,7 @@ docker images --all
 ### build
 
 ```bash
-    docker build --tag "test_mongodb:dockerfile" --file ./Dockerfile.db
+    docker build --tag "test_mongodb:dockerfile" --file ./Dockerfile.db .
 ```
 
 ### run  
