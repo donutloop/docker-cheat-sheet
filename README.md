@@ -5,6 +5,11 @@
 ```bash
   docker rm $(docker ps -a -q)
 ```
+## Delete all containser with volumes
+
+```bash
+  docker rm --volumes $(docker ps -a -q)
+```
 
 ## Stop all containers:
 
