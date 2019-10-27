@@ -78,3 +78,9 @@ docker images --all
 ```bash
      docker run -p 27017:27017 test_mongodb:dockerfile 
 ```
+
+## Search for image
+
+```bash
+  docker search nodejs
+```
