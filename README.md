@@ -1,5 +1,11 @@
 # docker-cheat-sheet
 
+## Delete all 
+
+```bash
+docker system prune -a
+```
+
 ## Delete all containers
 
 ```bash
